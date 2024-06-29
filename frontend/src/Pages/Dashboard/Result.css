@@ -1,0 +1,107 @@
+.company-list {
+    height: 100%;
+    margin-top: 4rem;
+}
+
+.company-list-title {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-list-title>h3 {
+    font-size: 28px;
+}
+
+.company-list-title>button {
+    height: 60px;
+    background-color: rgb(85, 164, 255);
+    color: #fff;
+    font-size: 19px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.company-grid {
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 'company-sidebar company-list';
+    column-gap: 5rem;
+}
+
+.result-header {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    column-gap: 5px;
+    border-bottom: 2px solid;
+    font-size: 20px;
+}
+
+.header-col {
+    width: 150px;
+    height: 50px;
+    padding-top: 10px;
+    display: flex;
+    column-gap: 20px;
+    font-size: 20px;
+
+}
+
+.comapny-details>img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.result-collections {
+    height: 100%;
+    display: flex;
+    border-bottom: 2px solid;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.comapny-details {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.detials {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 19px;
+}
+
+#action-group {
+    display: flex;
+}
+
+#action-group>button {
+    height: 50px;
+    width: 110%;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    margin-left: 40px;
+}
+
+.download-btn {
+    width: 200px;
+    padding: 10px;
+    background-color: #3686db;
+    color: #6ff81f;
+    font-size: 14px;
+}
+
+#action-group>button:nth-child(2) {
+    background-color: #e1ecf7;
+    color: #1fbbf8;
+    font-size: 14px;
+}

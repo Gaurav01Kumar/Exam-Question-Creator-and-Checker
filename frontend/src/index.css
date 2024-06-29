@@ -1,0 +1,212 @@
+.body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #01ce12; 
+  border-radius: 5px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0a5e11;
+}
+
+/* ... */
+
+
+.navbar {
+  padding: 10px;
+  background-color: #ffffff;
+  /*text-align: center;*/
+}
+
+.nav-item {
+  display: inline-block;
+  text-decoration: none;
+}
+
+
+
+
+.logo {
+  height: 100px;
+  width: 100px;
+  float: left;
+  padding-left: 190px;
+}
+
+.links {
+  align-items: center;
+  float: right;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 28px;
+}
+
+
+
+.main_container {
+  background-color: #E3F9FC;
+  height: 100vh;
+}
+
+.page-conatiner {
+  display: inline-flex;
+  align-items: center;
+  margin: 60px;
+}
+
+.home-header {
+  width: fit-content;
+  padding-left: 12%;
+  padding-top: 200px;
+  align-items: center;
+  text-align: left;
+}
+
+.home-header h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 58px;
+  color: #08823F;
+}
+
+.home-header h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24;
+  color: #08823F;
+}
+
+
+.std-img {
+  position: absolute;
+  float: right;
+  bottom: 0;
+  right: 0;
+  margin-right: 17%;
+  margin-bottom: 6%;
+  padding: 30px 30px;
+  height: 60vh;
+  width: 60vh;
+  display: inline-flex;
+
+}
+
+.register {
+  display: flex;
+  width: fit-content;
+  padding-top: 25px;
+}
+
+
+
+/* Service Card */
+
+/* .serList {
+  list-style: none;
+} */
+
+
+/* Service Page */
+
+.header {
+  font-size: 48px;
+  padding-left: 200px;
+  padding-top: 60px;
+  color: #08823F;
+  text-decoration: underline;
+  padding-bottom: 90px;
+}
+
+.registerSer {
+  padding-top: 40px;
+  padding-left: 30px;
+}
+
+
+/* Registeration page */
+
+.form {
+  height: fit-content;
+  background-color: #ffffff;
+  width: fit-content;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  margin-top: 100px;
+  border-radius: 10px;
+  padding: 60px;
+}
+
+
+@media (max-width: 767px) {
+
+  /* Hide the image on mobile */
+  .std-img {
+    display: none;
+  }
+
+  /* Move the header content below the navigation bar */
+  .home-header {
+    padding-top: 50px;
+    order: 2;
+  }
+
+  /* Center the navigation bar and header content */
+  .page-conatiner {
+    justify-content: center;
+  }
+
+  .btn {
+    height: 24px;
+    width: 80px;
+    font-size: 12px;
+  }
+
+  .links {
+    margin: 0;
+    padding: 0px;
+    padding-top: 20px;
+  }
+
+  .logo {
+    height: 80px;
+    width: 80px;
+  }
+
+  /* container h3 title -font */
+  .container-title h3{
+    font-size: 1em;
+  }
+  /* result grid font sizes */
+  .result-grid p{
+    font-size: 10px;
+  }
+  .result-lists{
+    padding: 8px;
+}
+
+
+  /* result page button and header - flex-col */
+  .company-list-title{
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+  }
+  /* font center in flex-col */
+  .company-list-title h3{
+    text-align: center;
+  }
+
+}
